@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'antd/dist/reset.css'; // Для Ant Design 5.x
+// или import 'antd/dist/antd.min.css'; // Для Ant Design 4.x
+import DataTable from './components/DataTable'; // Убедитесь, что файл существует
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataTable />
     </div>
   );
 }
